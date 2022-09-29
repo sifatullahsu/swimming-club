@@ -1,5 +1,70 @@
 .sidebar {
   background-color: #001111;
+  color: #fff;
   height: 100vh;
   padding: 25px;
+}
+
+.sidebar-calculation {
+  position: sticky;
+  top: 30px;
+}
+
+.add-a-break {
+  margin-bottom: 50px;
+}
+
+.add-a-break div {
+  background-color: #fff;
+  padding: 10px;
+  margin-top: 15px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 5px;
+}
+
+.add-a-break div button {
+  padding: 7px 3px;
+  background-color: #001111;
+  color: #fff;
+  border-radius: 5px;
+  border: 0;
+}
+
+.add-a-break div button.active,
+.add-a-break div button:hover {
+  background-color: #e79802;
+}
+
+.exercise-details div {
+  background-color: #fff;
+  padding: 10px;
+  margin-top: 15px;
+  color: #001111;
+  display: flex;
+  justify-content: space-between;
+}
+
+.exercise-details div span:first-child {
+  font-weight: 600;
+}
+
+.exercise-details div span:last-child {
+  font-size: 13x;
+  color: #7a7a7a;
+  letter-spacing: -1px;
+}
+
+.activity-completed button {
+  margin-top: 50px;
+  width: 100%;
+  padding: 15px 10px;
+  background-color: #e79802;
+  color: #fff;
+  border-radius: 4px;
+  border: 0;
+}
+
+.activity-completed button:hover {
+  background-color: #000;
 }

@@ -1,7 +1,7 @@
 [
   {
     "id": "01",
-    "name": "Breaststroke",
+    "title": "Breaststroke",
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Phelps_400m_IM_Missouri_GP_2008_retouched.jpg/300px-Phelps_400m_IM_Missouri_GP_2008_retouched.jpg",
     "age": "20-25",
     "time": {
@@ -11,7 +11,7 @@
   },
   {
     "id": "02",
-    "name": "Butterfly",
+    "title": "Butterfly",
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Phelps_400m_IM_Missouri_GP_2008_retouched.jpg/300px-Phelps_400m_IM_Missouri_GP_2008_retouched.jpg",
     "age": "20-25",
     "time": {
@@ -21,7 +21,7 @@
   },
   {
     "id": "03",
-    "name": "Backstroke",
+    "title": "Backstroke",
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Phelps_400m_IM_Missouri_GP_2008_retouched.jpg/300px-Phelps_400m_IM_Missouri_GP_2008_retouched.jpg",
     "age": "20-25",
     "time": {
@@ -31,7 +31,7 @@
   },
   {
     "id": "04",
-    "name": "Sidestroke",
+    "title": "Sidestroke",
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Phelps_400m_IM_Missouri_GP_2008_retouched.jpg/300px-Phelps_400m_IM_Missouri_GP_2008_retouched.jpg",
     "age": "20-25",
     "time": {
@@ -41,7 +41,7 @@
   },
   {
     "id": "05",
-    "name": "Front crawl",
+    "title": "Front crawl",
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Phelps_400m_IM_Missouri_GP_2008_retouched.jpg/300px-Phelps_400m_IM_Missouri_GP_2008_retouched.jpg",
     "age": "20-25",
     "time": {
@@ -51,7 +51,7 @@
   },
   {
     "id": "06",
-    "name": "Freestyle",
+    "title": "Freestyle",
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Phelps_400m_IM_Missouri_GP_2008_retouched.jpg/300px-Phelps_400m_IM_Missouri_GP_2008_retouched.jpg",
     "age": "20-25",
     "time": {

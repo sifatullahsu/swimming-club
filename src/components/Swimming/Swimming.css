@@ -1,0 +1,34 @@
+.swimming {
+  background-color: #001111;
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+.swimming img {
+  padding: 5px;
+  background-color: #fff;
+}
+
+.swimming .title {
+  font-size: 18px;
+  color: #e79802;
+}
+
+.swimming .description {
+  margin-bottom: 20px;
+}
+
+.swimming button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  background-color: #e79802;
+  color: #fff;
+  border-radius: 4px;
+}
+
+.swimming button:hover {
+  background-color: #000;
+}

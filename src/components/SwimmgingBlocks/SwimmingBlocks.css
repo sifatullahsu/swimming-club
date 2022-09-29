@@ -6,3 +6,9 @@
 .site-title {
   color: #e79802;
 }
+
+.swimming-types {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
