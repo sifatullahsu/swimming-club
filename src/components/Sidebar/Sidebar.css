@@ -63,7 +63,7 @@
   letter-spacing: -1px;
 }
 
-.activity-completed button {
+.activity-completed button.btn {
   margin-top: 50px;
   width: 100%;
   padding: 15px 10px;
