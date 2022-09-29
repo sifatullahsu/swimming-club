@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import './App.css';
 import Sidebar from './components/Sidebar/Sidebar';
 import SwimmingBlocks from './components/SwimmgingBlocks/SwimmingBlocks';
@@ -6,13 +6,10 @@ import { addToDb, getStoredSwimming } from './Utilities/Utilities';
 
 function App() {
 
-  const [exerciseDetails, setExerciseDetails] = useState([]);
-
   const getSwimming = getStoredSwimming();
+  // console.log(getSwimming);
 
-  useEffect( () => {
-    setExerciseDetails(getSwimming);
-  }, []);
+  const [exerciseDetails, setExerciseDetails] = useState(getSwimming);
 
 
   const handleAddToList = (swimmingInfo) => {

@@ -17,6 +17,12 @@ const Sidebar = ({exerciseDetails}) => {
 
   return (
     <div className='sidebar'>
+      <div className='user-info'>
+        <span><small>personal info</small></span>
+        <h3>Sifat Ullah</h3>
+        <p>Dhaka, Bangladesh</p>
+        <p>Manarat International University at the department of CSE, 9th semester.</p>
+      </div>
       <div className='sidebar-calculation'>
         <div className='add-a-break'>
           <h3>Add A Break</h3>

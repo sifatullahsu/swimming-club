@@ -5,6 +5,14 @@
   padding: 25px;
 }
 
+.user-info {
+  margin-bottom: 40px;
+}
+
+.user-info small {
+  color: #e79802;
+}
+
 .sidebar-calculation {
   position: sticky;
   top: 30px;
