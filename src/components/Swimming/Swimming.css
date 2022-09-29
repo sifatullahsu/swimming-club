@@ -27,8 +27,25 @@
   background-color: #e79802;
   color: #fff;
   border-radius: 4px;
+  border: 0;
 }
 
 .swimming button:hover {
   background-color: #000;
+}
+
+@media(max-width: 767px) {
+  .swimming {
+    padding: 10px;
+  }
+
+  .swimming .title {
+    font-size: 16px;
+  }
+
+  .swimming .description,
+  .swimming .age,
+  .swimming .time {
+    font-size: 13px;
+  }
 }

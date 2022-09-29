@@ -12,3 +12,23 @@
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 20px;
 }
+
+@media (max-width: 1024px) {
+  .swimming-blocks {
+    padding: 40px 20px;
+  }
+
+  .swimming-types {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 767px) {
+  .swimming-blocks {
+    padding: 20px 10px;
+  }
+
+  .swimming-types {
+    grid-gap: 10px;
+  }
+}

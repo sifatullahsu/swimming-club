@@ -16,3 +16,15 @@ img {
   display: grid;
   grid-template-columns: 75% 25%;
 }
+
+@media (max-width: 1024px) {
+  .swimming-comtainer {
+    grid-template-columns: 65% 35%;
+  }
+}
+
+@media (max-width: 767px) {
+  .swimming-comtainer {
+    grid-template-columns: 100%;
+  }
+}
