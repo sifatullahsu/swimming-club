@@ -1,9 +1,12 @@
 import React, { useState } from 'react';
+import { getBreakTime, putBreakTime } from '../../Utilities/Utilities';
 import './Sidebar.css';
 
 const Sidebar = ({exerciseDetails}) => {
   let exerciseTime = 0;
-  const [breakTime, setBreakTime] = useState([]);
+
+  const getBreak = getBreakTime();
+  const [breakTime, setBreakTime] = useState(getBreak);
 
   for (const exerciseItem of exerciseDetails) {
     exerciseTime = exerciseTime + exerciseItem.time.timeValue * exerciseItem.qty;
@@ -11,9 +14,8 @@ const Sidebar = ({exerciseDetails}) => {
 
   const handleBreakTime = (data) => {
     setBreakTime(data);
+    putBreakTime(data);
   }
-
-  
 
   return (
     <div className='sidebar'>

@@ -2,7 +2,7 @@ import { useState } from 'react';
 import './App.css';
 import Sidebar from './components/Sidebar/Sidebar';
 import SwimmingBlocks from './components/SwimmgingBlocks/SwimmingBlocks';
-import { addToDb, getStoredSwimming } from './Utilities/Utilities';
+import { putStoredSwimming, getStoredSwimming } from './Utilities/Utilities';
 
 function App() {
 
@@ -27,7 +27,7 @@ function App() {
     }
 
     setExerciseDetails(newCart);
-    addToDb(newCart);
+    putStoredSwimming(newCart);
   }
 
   return (

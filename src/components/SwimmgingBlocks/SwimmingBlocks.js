@@ -14,7 +14,8 @@ const SwimmingBlocks = ({handleAddToList}) => {
 
   return (
     <div className='swimming-blocks'>
-      <h3 className='site-title'>Swimmging Club</h3>
+      <h2 className='site-title'>Swimmging Club</h2>
+      <p style={{marginBottom: '20px'}}>Select swimming types that you need to do.</p>
       <div className='swimming-types'>
         {swimmingBlocks.map(swimming => <Swimming swimming={swimming} handleAddToList={handleAddToList} key={swimming.id}></Swimming>)}
       </div>

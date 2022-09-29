@@ -3,8 +3,17 @@ const getStoredSwimming = () => {
   return storedSwimming ? JSON.parse(storedSwimming) : [];
 }
 
-const addToDb = (data) => {
+const putStoredSwimming = (data) => {
   localStorage.setItem('stored-swimming', JSON.stringify(data));
 }
 
-export {getStoredSwimming, addToDb};
+const getBreakTime = () => {
+  const breakTime = localStorage.getItem('break-time');
+  return breakTime ? JSON.parse(breakTime) : {};
+}
+
+const putBreakTime = (data) => {
+  localStorage.setItem('break-time', JSON.stringify(data));
+}
+
+export {getStoredSwimming, putStoredSwimming, getBreakTime, putBreakTime};
