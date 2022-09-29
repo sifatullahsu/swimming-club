@@ -2,14 +2,11 @@ import React, { useState } from 'react';
 import './Sidebar.css';
 
 const Sidebar = ({exerciseDetails}) => {
-  const [exerciseTime, setExerciseTime] = useState(0);
-  const [breakTime, setBreakTime] = useState(0);
-  
-  let exerciseTimeTotal = 0;
-  let breakTimeTotal = 0;
+  let exerciseTime = 0;
+  let breakTime = 0;
 
   for (const exerciseItem of exerciseDetails) {
-    console.log(exerciseItem);
+    exerciseTime = exerciseTime + parseInt(exerciseItem.time.timeValue);
   }
 
   return (
