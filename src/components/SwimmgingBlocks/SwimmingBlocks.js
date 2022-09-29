@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import Que from '../Que/Que';
 import Swimming from '../Swimming/Swimming';
 import './SwimmingBlocks.css';
 
@@ -19,6 +20,7 @@ const SwimmingBlocks = ({handleAddToList}) => {
       <div className='swimming-types'>
         {swimmingBlocks.map(swimming => <Swimming swimming={swimming} handleAddToList={handleAddToList} key={swimming.id}></Swimming>)}
       </div>
+      <Que></Que>
     </div>
   );
 };

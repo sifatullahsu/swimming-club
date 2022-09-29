@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import { getBreakTime, putBreakTime } from '../../Utilities/Utilities';
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import './Sidebar.css';
+
 
 const Sidebar = ({exerciseDetails}) => {
   let exerciseTime = 0;
@@ -16,6 +19,10 @@ const Sidebar = ({exerciseDetails}) => {
     setBreakTime(data);
     putBreakTime(data);
   }
+
+  const notify = () => {
+    toast("Wow so easy!", {position: toast.POSITION.TOP_LEFT});
+  };
 
   return (
     <div className='sidebar'>
@@ -50,6 +57,7 @@ const Sidebar = ({exerciseDetails}) => {
         </div>
         <div className='activity-completed'>
           <button>Activity Completed</button>
+          <button onClick={notify}>Notify!</button>
         </div>
       </div>
     </div>
