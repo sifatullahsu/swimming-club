@@ -13,7 +13,7 @@ const Swimming = (props) => {
         <p className='description'>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
         <div className='age'>For Age: {age}</div>
         <div className='time'>Time Required: {time.timeValue + time.timeType}</div>
-        <button onClick={() => handleAddToList({id, time})}>Add to List</button>
+        <button onClick={() => handleAddToList({id, time, qty: 1})}>Add to List</button>
       </div>
     </div>
   );

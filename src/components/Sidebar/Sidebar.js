@@ -6,10 +6,10 @@ const Sidebar = ({exerciseDetails}) => {
   const [breakTime, setBreakTime] = useState([]);
 
   for (const exerciseItem of exerciseDetails) {
-    exerciseTime = exerciseTime + parseInt(exerciseItem.time.timeValue);
+    exerciseTime = exerciseTime + exerciseItem.time.timeValue * exerciseItem.qty;
   }
 
-  const handleBreakTime = (data, e) => {
+  const handleBreakTime = (data) => {
     setBreakTime(data);
   }
 
@@ -37,7 +37,7 @@ const Sidebar = ({exerciseDetails}) => {
           </div>
           <div>
             <span>Break time</span>
-            <span>{breakTime.value} seconds</span>
+            <span>{breakTime.value ? breakTime.value : 0} seconds</span>
           </div>
         </div>
         <div className='activity-completed'>
