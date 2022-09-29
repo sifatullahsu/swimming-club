@@ -1,7 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Sidebar.css';
 
-const Sidebar = (props) => {
+const Sidebar = ({exerciseDetails}) => {
+  const [exerciseTime, setExerciseTime] = useState(0);
+  const [breakTime, setBreakTime] = useState(0);
+  
+  let exerciseTimeTotal = 0;
+  let breakTimeTotal = 0;
+
+  for (const exerciseItem of exerciseDetails) {
+    console.log(exerciseItem);
+  }
+
   return (
     <div className='sidebar'>
       <div className='sidebar-calculation'>
@@ -20,11 +30,11 @@ const Sidebar = (props) => {
           <h3>Exercise Details</h3>
           <div>
             <span>Exercise time</span>
-            <span>200 seconds</span>
+            <span>{exerciseTime} seconds</span>
           </div>
           <div>
             <span>Break time</span>
-            <span>10 seconds</span>
+            <span>{breakTime} seconds</span>
           </div>
         </div>
         <div className='activity-completed'>
