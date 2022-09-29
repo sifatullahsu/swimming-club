@@ -9,16 +9,15 @@
 .swimming img {
   padding: 5px;
   background-color: #fff;
+  height: 150px;
 }
 
 .swimming .title {
   font-size: 18px;
   color: #e79802;
-}
-
-.swimming .description {
   margin-bottom: 20px;
 }
+
 
 .swimming button {
   width: 100%;
@@ -34,9 +33,24 @@
   background-color: #000;
 }
 
+@media(max-width: 1024px) {
+  .swimming .title {
+    margin-bottom: 10px;
+  }
+
+  .swimming img {
+    height: 120px;
+  }
+}
+
 @media(max-width: 767px) {
   .swimming {
     padding: 10px;
+  }
+
+  .swimming img {
+    height: 100px;
+    padding: 3px;
   }
 
   .swimming .title {

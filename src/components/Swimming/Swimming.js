@@ -10,7 +10,6 @@ const Swimming = (props) => {
       <div className='swimming-inner'>
         <img src={image} alt="" />
         <h3 className='title'>{title}</h3>
-        <p className='description'>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
         <div className='age'>For Age: {age}</div>
         <div className='time'>Time Required: {time.timeValue + time.timeType}</div>
         <button onClick={() => handleAddToList({id, time, qty: 1})}>Add to List</button>

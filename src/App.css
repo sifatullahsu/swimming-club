@@ -27,4 +27,8 @@ img {
   .swimming-comtainer {
     grid-template-columns: 100%;
   }
+
+  .swimming-comtainer .sidebar {
+    grid-row: 1;
+  }
 }
