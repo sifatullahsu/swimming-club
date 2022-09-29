@@ -3,11 +3,17 @@ import './Sidebar.css';
 
 const Sidebar = ({exerciseDetails}) => {
   let exerciseTime = 0;
-  let breakTime = 0;
+  const [breakTime, setBreakTime] = useState([]);
 
   for (const exerciseItem of exerciseDetails) {
     exerciseTime = exerciseTime + parseInt(exerciseItem.time.timeValue);
   }
+
+  const handleBreakTime = (data, e) => {
+    setBreakTime(data);
+  }
+
+  
 
   return (
     <div className='sidebar'>
@@ -15,12 +21,12 @@ const Sidebar = ({exerciseDetails}) => {
         <div className='add-a-break'>
           <h3>Add A Break</h3>
           <div>
-            <button>10s</button>
-            <button>20s</button>
-            <button>30s</button>
-            <button>40s</button>
-            <button>50s</button>
-            <button>60s</button>
+            <button onClick={() => handleBreakTime({id: 1, value: 10})}>10s</button>
+            <button onClick={() => handleBreakTime({id: 2, value: 20})}>20s</button>
+            <button onClick={() => handleBreakTime({id: 3, value: 30})}>30s</button>
+            <button onClick={() => handleBreakTime({id: 4, value: 40})}>40s</button>
+            <button onClick={() => handleBreakTime({id: 5, value: 50})}>50s</button>
+            <button onClick={() => handleBreakTime({id: 6, value: 60})}>60s</button>
           </div>
         </div>
         <div className='exercise-details'>
@@ -31,7 +37,7 @@ const Sidebar = ({exerciseDetails}) => {
           </div>
           <div>
             <span>Break time</span>
-            <span>{breakTime} seconds</span>
+            <span>{breakTime.value} seconds</span>
           </div>
         </div>
         <div className='activity-completed'>
